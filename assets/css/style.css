@@ -364,6 +364,7 @@ body.loaded #preloader{
     width: 250px;
     height: 100%;
     transition: .3s;
+    opacity: 0.9;
 }
 
 .active 
@@ -475,7 +476,23 @@ ul li a
     transition: all 0.3s ease-out;
 }
 
+.parallax {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/concert.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
 
+.boxed{
+    border: solid 2px white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    border-width: 5px;
+
+}
 /*
 * ----------------------------------------------------------------------------------------
 * 04.ABOUT CSS STYLE
@@ -483,8 +500,7 @@ ul li a
 */
 
 #about {
-    background-color: #777;
-    color: #000;
+    color: #fff;
 }
 
 .about-text h2 {
@@ -498,8 +514,10 @@ ul li a
 }
 
 .about-text p {
-    font-weight: 300;
-    margin-bottom: 30px;
+    margin-top: 150px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+
 }
 
 /*

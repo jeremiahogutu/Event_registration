@@ -91,7 +91,8 @@
 @media screen and (min-width: 960px) {
     
     .about-text p {
-    font-size: 1.2em;
+    font-size: 1.7em;
+    line-height: 1.5em;
     }
 
     .contact-form button.btn {
