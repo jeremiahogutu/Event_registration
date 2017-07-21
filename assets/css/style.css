@@ -387,11 +387,12 @@ ul li
 
 ul li a 
 {
-    padding: 10px 20px;
+    padding: 20px 20px;
     color: #fff;
     display: block;
     text-decoration: none;
     border-bottom: 1px solid rgba(0,0,0,.2);
+    font-size: 30px;
 }
 
 .sidebarBtn
