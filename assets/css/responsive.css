@@ -14,15 +14,6 @@
         padding: 0;
     }
 
-    .navbar-nav {
-        width: 100%;
-        text-align: center;
-    }
-    .navbar-nav li {
-        float: none;
-        display: inline-block;
-    }
-
     .single-footer {
         margin-top: 30px;
     }
@@ -67,9 +58,6 @@
     .about-text {
         margin-top: 30px;
     }
-    .margin-top-c {
-        margin-top: 0px;
-    }
     .section-title p {
         padding: 0;
     }
@@ -84,10 +72,6 @@
     }
     .single-footer {
         margin-top: 30px;
-    }
-    .about-text ul li {
-    width: 100%;
-
     }
     .about-text p {
     margin-top: 70px;

@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -58,7 +61,7 @@
         <!-- END SIDEBAR MENU -->
                 </div>
                     <!-- <div class="col-md-9 logo">
-                    <h2>Chess Tournament</h2>
+                    <h2>Charity Concert</h2>
                     </div> -->
                 </div>
             </div>
@@ -99,7 +102,7 @@
                 <div class="col-md-12">
                     <!-- START ABOUT TEXT AREA -->
                     <div class="about-text">
-                        <p class="wow fadeInUp" data-wow-delay="0.6s"> Come join us for our benefit concert, we have an amazing line up of musicians for your enjoyment. Don't forget to make a donation all money raised will go to helping our local homeless shelters. Also take some time to browse our silent auction for some great deals. Ticket reservations can be made through our website.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s"> Come join us for our benefit concert, we have an amazing line up of musicians for your enjoyment. Don't forget to make a donation, all money raised will go to helping our local homeless shelters. Also take some time to browse our silent auction for some great deals. Ticket reservations can be made through our website.</p>
                         </ul>
                     </div>
                     <!-- / END ABOUT TEXT AREA -->
@@ -129,7 +132,7 @@
                                 <input id="email" class="form-control" type="email" name="email" placeholder="Email" required>
                             </div>
                             <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.5s">
-                                <input id="address" class="form-control" type="text" name="address" placeholder="Address" required></input>
+                                <input id="address" class="form-control" type="text" name="address" placeholder="Street" required></input>
                             </div>
                             <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.5s">
                                 <input id="city" class="form-control" type="text" name="city" placeholder="City" required></input>
@@ -138,7 +141,8 @@
                                 <input id="state" class="form-control" type="text" name="state" placeholder="Province/State" required>
                             </div>
                             <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.3s">
-                                  <select id="country" class="form-control" name="country">
+                                  <select id="country" class="form-control" name="country" required>
+                                  <option value="" disabled selected>Select your country</option>
 							      <option value="usa">U.S.</option>
 							      <option value="canada">Canada</option>
 							      <option value="Mexico">Mexico</option>

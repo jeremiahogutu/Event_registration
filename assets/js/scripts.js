@@ -70,49 +70,36 @@
 
         /*
          * ----------------------------------------------------------------------------------------
-         *  CONTACT JS
+         *  Form validation
          * ----------------------------------------------------------------------------------------
          */
 
 // Postal codes do not include the letters D, F, I, O, Q or U, and the first position also does not make use of the letters W or Z.
-function checkPostal(postal) {
+    function checkPostal(postal) {
+
+    //Regex code to validate the postal code
     var regex = new RegExp(/^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]( )?\d[ABCEGHJKLMNPRSTVWXYZ]\d$/i);
+    //Gets the value of the postal code entered by the user
     var postal = document.getElementById("postal").value
     if (regex.test(postal.value))
-        return true;
+        return true;//test passes if postal code is valid
     else
+        //test fails if postal code is invalid
         alert("please enter valid postal code") 
         return false;
-}
-
-// function validate() {
-        
-//       // e.preventDefault(); // prevent the form sending
-      
-    
-//       var Reg = /^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]( )?\d[ABCEGHJKLMNPRSTVWXYZ]\d$/i;
-//       var postal= document.getElementById('postal');
-//       // var password = document.getElementById('password');
-
-//       if (Reg.test(postal.value) == false) {
-//         alert('Invalid Postal Code.');
-//         postal.focus();
-//         return false;
-//       }
-//        //add event listener for form submission
-//     document.getElementById('form_id').addEventListener('submit',validate);
-//     }
+    }
 
 
         $(document).ready(function () {
-            toggleFields(); // call this first so we start out with the correct visibility depending on the selected form values
-    // this will call our toggleFields function every time the selection value of our other field changes
+            toggler(); // sets the visibility based on the selected values
+
+        //calls toggler function every time the selection value of the field changes
         $("#country").change(function () {
-            toggleFields();
+            toggler();
         });
     });
-        // this toggles the visibility of other server
-        function toggleFields() {
+        // this toggles the visibility of postal code field
+        function toggler() {
             if ($("#country").val() === "canada")
         $("#postal").show();
             else
@@ -135,7 +122,6 @@ function validate(){
         if (reg.test(postal.value)== false) {
             document.getElementById("demo").style.color = "red";
                 document.getElementById("demo").innerHTML ="Invalid postal Code: "+ newVal;
-                // alert('Invalid Postal Code: '+newVal);
                 return false;
             } else{
             document.getElementById("demo").style.color = "DarkGreen";      

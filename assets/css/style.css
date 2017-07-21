@@ -62,12 +62,6 @@ li {
     padding: 0;
 }
 
-fieldset {
-    border: 0 none;
-    margin: 0 auto;
-    padding: 0;
-}
-
 .no-padding {
     padding: 0
 }
@@ -305,7 +299,6 @@ body.loaded #preloader{
     position: absolute;
     background: -webkit-linear-gradient(top, transparent 0, rgba(16, 16, 16, .99) 100%);
     background: linear-gradient(to bottom, transparent 0, rgba(16, 16, 16, .99) 100%);
-    /*filter: unicode("progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fc101010', GradientType=0)");*/
     left: 0;
     top: 0;
     width: 100%;
@@ -463,22 +456,6 @@ ul li a
     transform: rotate(-45deg);
 }
 
-.logo {
-    padding-top: 20px;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.logo a p{
-    display: block;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 30px;
-     -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
 .parallax {
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/concert.jpg') no-repeat center;
     background-size: cover;
@@ -525,7 +502,7 @@ ul li a
 
 /*
 * ----------------------------------------------------------------------------------------
-* 07.CONTACT CSS STYLE
+* 05.CONTACT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
@@ -537,22 +514,6 @@ ul li a
 .contact-details-list p {
     margin-bottom: 30px;
     color: #333;
-}
-
-.single-contact {
-    margin-bottom: 22px;
-}
-
-.single-contact h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #000;
-}
-
-.single-contact h3 i {
-    margin-right: 20px;
 }
 
 .form-control {
@@ -595,7 +556,7 @@ ul li a
 
 /*
 * ----------------------------------------------------------------------------------------
-* 08.FOOTER CSS STYLE
+* 06.FOOTER CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 
@@ -607,41 +568,5 @@ ul li a
 .single-footer h6 {
     font-size: 16px;
     color: #fafafa;
-}
-.footer-social-link {
-    margin-bottom: 10px;
-}
-
-.footer-social-link ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.footer-social-link ul li {
-    display: inline-block;
-    margin: 0px 20px;
-}
-
-.footer-social-link ul li a {
-    display: block;
-    color: #ccc;
-    font-size: 40px;
-}
-
-.footer-social-link ul li a .fb {
-    color: #3B5998;
-}
-
-.footer-social-link ul li a .tw {
-    color: #55ACEE;
-}
-
-.footer-social-link ul li a .dri {
-    color: #EC4A89;
-}
-
-.footer-social-link ul li a .ins {
-    color: #2D6B94;
 }
 
