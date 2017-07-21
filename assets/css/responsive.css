@@ -1,7 +1,4 @@
 
-/* Medium Layout: 1280px. */
-
-@media only screen and (min-width: 992px) and (max-width: 1280px) {}
 
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -32,6 +29,11 @@
 
 }
 
+@media only screen and (max-width: 420px) {
+    h2 .boxed {
+    font-size: 19px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .welcome-image-area {
@@ -85,7 +87,12 @@
     }
     .about-text ul li {
     width: 100%;
-}
+
+    }
+    .about-text p {
+    margin-top: 70px;
+
+    }
 }
 
 @media screen and (min-width: 960px) {
